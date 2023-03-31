@@ -1,0 +1,148 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: hsl(204, 43%, 93%);
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+
+p, h1, h2, h3, h4, h5{
+    margin: 0;
+}
+
+h4{
+    font-size: 1.25rem;
+}
+
+h2{
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
+
+#card{
+    border-radius: 10px;
+    /* width: 60%; */
+    max-width: 650px;
+    width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 0px 30px 5px rgba(0, 0, 0, .15);
+}
+
+#top-section, 
+#bottom-left-section, 
+#bottom-right-section{
+    padding: 40px;
+}
+
+#top-section{
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+#top-section h2{
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+#top-section h4{
+    color: hsl(71, 73%, 54%);
+    padding-bottom: 10px;
+}
+
+#top-section p{
+    color: hsl(218, 22%, 67%);
+    line-height: 27px;
+}
+
+#bottom-section{
+    display: grid;
+    grid-template-columns: .5fr .5fr;
+}
+
+#bottom-left-section{
+    background-color: rgba(43,179,177,255);
+    color: #fff;
+    border-bottom-left-radius: 10px;
+}
+
+#bottom-left-section h2{
+    font-size: 1.3rem;
+    padding-bottom: 20px;
+}
+
+#bottom-left-section div{
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+#bottom-left-section button{
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    background-color: rgba(191,223,50,255);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 0px 30px 5px rgba(0, 0, 0, .1);
+}
+
+#bottom-left-section button:hover{
+    background-color: rgba(191,223,50, .9);
+    transform: scale(1.03);
+    transition: 0.3s ease;
+}
+
+.dollar{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.month{
+    color: hsl(204, 43%, 93%);
+    padding-left: 10px;
+}
+
+#bottom-right-section{
+    color: #fff;
+    background-color:rgba(73,190,187,255);
+    border-bottom-right-radius: 10px;
+}
+#bottom-right-section ul{
+    list-style-type: none;
+    padding: 0 ;
+    line-height: 20px;
+    color: rgba(255,255,255, .8);
+}
+
+@media (max-width: 720px){
+
+    #card{
+        width: 60%;
+    }
+    #bottom-section{
+        display: block;
+    }
+
+    #bottom-left-section{
+        border-radius: 0px;
+    }
+
+    #bottom-right-section{
+        border-bottom-left-radius: 10px;
+    }
+}
